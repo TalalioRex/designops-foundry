@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BG Preview — Install Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      padding: 40px 20px;
+    }
+    .wrapper {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .header {
+      background: #2D2D2D;
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .header p {
+      font-size: 14px;
+      color: #aaa;
+    }
+    h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 14px;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+      border: 1px solid #e8e8e8;
+    }
+    .step {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 18px;
+      align-items: flex-start;
+    }
+    .step:last-child { margin-bottom: 0; }
+    .step-num {
+      background: #2D2D2D;
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-content p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .step-content strong { color: #111; }
+    .code {
+      display: inline-block;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 2px 8px;
+      font-family: monospace;
+      font-size: 13px;
+      color: #c0392b;
+      margin: 2px 0;
+    }
+    .tip {
+      background: #f0faf3;
+      border: 1px solid #c3e6cb;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #2d6a4f;
+      line-height: 1.6;
+    }
+    .tip strong { color: #1b4332; }
+    .modes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .mode {
+      background: #f9f9f9;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .mode .label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 4px;
+    }
+    .mode .label span {
+      background: #2D2D2D;
+      color: #fff;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 11px;
+      margin-left: 4px;
+    }
+    .mode p {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 22px;
+      background: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      transition: background 0.15s;
+    }
+    .download-btn:hover { background: #43a047; }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <h1>🖼️ BG Preview Extension</h1>
+    <p>Preview background images on real websites before sending to stakeholders.</p>
+    <a class="download-btn" href="BG Preview - Shareable.zip" download>
+      ⬇ Download Extension (ZIP)
+    </a>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="section">
+    <h2>Step 1 — Install the Extension</h2>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <p>Open <strong>Google Chrome</strong> and type this in the address bar:<br>
+        <span class="code">chrome://extensions/</span><br>
+        Press Enter.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <p>In the top right corner, turn on <strong>Developer mode</strong> (it's a small toggle switch).</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <p>Click the <strong>Load unpacked</strong> button that appears on the top left.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <p>A file browser opens. Navigate to the folder where you unzipped this file, select the <strong>bg-preview-extension</strong> folder, and click <strong>Select Folder</strong>.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <p>Done! The <strong>BG Preview</strong> extension now appears in your Chrome toolbar. You only need to do this once.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- USE -->
+  <div class="section">
+    <h2>Step 2 — Use It</h2>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <p>Open the website you want to preview the background on.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <p>Click the <strong>BG Preview</strong> icon in your Chrome toolbar (top right — looks like a puzzle piece 🧩, then find BG Preview).</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <p>A small panel opens. <strong>Click or drag your image</strong> into the upload area.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <p>Select a display mode (see below), then click <strong>Apply to Page</strong>.<br>
+        The background on the website changes instantly — only you can see it.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <p>Take your screenshots. When done, click <strong>Remove Preview</strong> to go back to normal.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEVICE -->
+  <div class="section">
+    <h2>Device Preview — Desktop or Mobile?</h2>
+    <div class="modes">
+      <div class="mode">
+        <div class="label">Desktop <span>✓ Default</span></div>
+        <p>Applies the background to the full page at 1920 × 1080. Use this for all standard desktop reviews.</p>
+      </div>
+      <div class="mode">
+        <div class="label">Mobile</div>
+        <p>Shows a floating 856 × 475 preview frame over the page. Click ✕ or anywhere outside to close it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODES -->
+  <div class="section">
+    <h2>Display Modes — Which One to Use?</h2>
+    <div class="modes">
+      <div class="mode">
+        <div class="label">Fixed <span>✓ Recommended</span></div>
+        <p>Fills the screen and stays still while scrolling. Most accurate for this website.</p>
+      </div>
+      <div class="mode">
+        <div class="label">Cover</div>
+        <p>Fills the full page. Can look stretched on very long pages.</p>
+      </div>
+      <div class="mode">
+        <div class="label">Contain</div>
+        <p>Shows the full image without cropping. May leave gaps on the sides.</p>
+      </div>
+      <div class="mode">
+        <div class="label">Repeat</div>
+        <p>Tiles the image like a pattern.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIP -->
+  <div class="tip">
+    <strong>Important:</strong> This extension only changes how the page looks <em>on your screen</em>. It does not edit the real website. Nothing is saved, nothing is broken. Refreshing the page removes the preview automatically.
+  </div>
+
+  <div class="footer">Made by the Design Team · BG Preview v1.1</div>
+
+</div>
+</body>
+</html>
