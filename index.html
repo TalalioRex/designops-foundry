@@ -210,8 +210,19 @@
     letter-spacing: 0.03em;
   }
 
+  .mrgg {
+    position: fixed;
+    bottom: 0;
+    width: 180px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .mrgg-left  { left: 0; }
+  .mrgg-right { right: 0; transform: scaleX(-1); }
+
   @media (max-width: 900px) {
     .page-wrap { padding: 40px 24px; }
+    .mrgg { width: 110px; }
   }
 
   @media (max-width: 720px) {
@@ -624,6 +635,10 @@
 </div>
 
 <footer>© Game Lounge — Internal Tools</footer>
+
+<!-- Mr. GG dancing characters -->
+<img class="mrgg mrgg-left"  src="Resources/mrgg-dance.gif" alt="">
+<img class="mrgg mrgg-right" src="Resources/mrgg-dance.gif" alt="">
 
 <!-- App shell (window-in-window) -->
 <div id="app-shell">
