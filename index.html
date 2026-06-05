@@ -213,18 +213,26 @@
   .mrgg {
     position: fixed;
     bottom: 0;
-    width: 300px;
+    width: clamp(90px, 16vw, 300px);
     pointer-events: none;
     z-index: 2;
   }
   .mrgg-left  { left: 140px; }
   .mrgg-right { right: 140px; }
 
+  @media (max-width: 1280px) {
+    .mrgg-left  { left: 40px; }
+    .mrgg-right { right: 40px; }
+  }
+
   @media (max-width: 900px) {
     .page-wrap { padding: 40px 24px; }
-    .mrgg { width: 140px; }
-    .mrgg-left  { left: 20px; }
-    .mrgg-right { right: 20px; }
+    .mrgg-left  { left: 10px; }
+    .mrgg-right { right: 10px; }
+  }
+
+  @media (max-width: 480px) {
+    .mrgg { display: none; }
   }
 
   @media (max-width: 720px) {
